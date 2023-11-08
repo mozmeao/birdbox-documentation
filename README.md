@@ -33,5 +33,4 @@ This documentation uses [MkDocs](https://www.mkdocs.org/) to generate documentat
 
 **And to publish changes:**
 
-* Ensure you're on `main`, all up to date with the merged changes from the PR present locally (`git pull main`)
-* `just publish` to do the upload
+* Push up to `main` and automation will deploy the latest version
