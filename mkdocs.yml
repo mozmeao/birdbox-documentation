@@ -1,0 +1,12 @@
+dev_addr: 127.0.0.1:8765
+
+nav:
+  - Home: index.md
+  - About: about.md
+
+site_name: Project Birdbox documentation
+
+site_url: https://mozmeao.github.io/birdbox-documentation/
+
+theme:
+  name: material
