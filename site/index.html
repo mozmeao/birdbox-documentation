@@ -1,0 +1,709 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://mozmeao.github.io/birdbox-documentation/">
+      
+      
+      
+        <link rel="next" href="about/">
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.8">
+    
+    
+      
+        <title>Project Birdbox documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.4b4a2bd9.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#birdbox" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="Project Birdbox documentation" class="md-header__button md-logo" aria-label="Project Birdbox documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Project Birdbox documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Home
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Project Birdbox documentation" class="md-nav__button md-logo" aria-label="Project Birdbox documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Project Birdbox documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#documentation-status" class="md-nav__link">
+    Documentation status
+  </a>
+  
+    <nav class="md-nav" aria-label="Documentation status">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#documentation-roadmap" class="md-nav__link">
+    Documentation Roadmap
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup" class="md-nav__link">
+    Setup
+  </a>
+  
+    <nav class="md-nav" aria-label="Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#running-locally-for-development-of-birdbox-itself" class="md-nav__link">
+    Running locally, for development of Birdbox itself
+  </a>
+  
+    <nav class="md-nav" aria-label="Running locally, for development of Birdbox itself">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#directly-on-your-machine" class="md-nav__link">
+    Directly on your machine
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#on-your-machine-via-docker" class="md-nav__link">
+    On your machine, via Docker
+  </a>
+  
+    <nav class="md-nav" aria-label="On your machine, via Docker">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cloud-storage-with-local-docker-build" class="md-nav__link">
+    Cloud storage with local Docker build
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sso-setup" class="md-nav__link">
+    SSO setup
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deployment-instructions" class="md-nav__link">
+    Deployment instructions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#real-world-use-instructions" class="md-nav__link">
+    Real-world use instructions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#local-development-tips" class="md-nav__link">
+    Local development tips
+  </a>
+  
+    <nav class="md-nav" aria-label="Local development tips">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-import-and-export-local-data" class="md-nav__link">
+    How To: import and export local data
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-add-a-new-streamfield-component-based-on-a-protocol-component" class="md-nav__link">
+    How To: Add a new StreamField component based on a Protocol component
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#documentation-status" class="md-nav__link">
+    Documentation status
+  </a>
+  
+    <nav class="md-nav" aria-label="Documentation status">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#documentation-roadmap" class="md-nav__link">
+    Documentation Roadmap
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup" class="md-nav__link">
+    Setup
+  </a>
+  
+    <nav class="md-nav" aria-label="Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#running-locally-for-development-of-birdbox-itself" class="md-nav__link">
+    Running locally, for development of Birdbox itself
+  </a>
+  
+    <nav class="md-nav" aria-label="Running locally, for development of Birdbox itself">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#directly-on-your-machine" class="md-nav__link">
+    Directly on your machine
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#on-your-machine-via-docker" class="md-nav__link">
+    On your machine, via Docker
+  </a>
+  
+    <nav class="md-nav" aria-label="On your machine, via Docker">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cloud-storage-with-local-docker-build" class="md-nav__link">
+    Cloud storage with local Docker build
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sso-setup" class="md-nav__link">
+    SSO setup
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deployment-instructions" class="md-nav__link">
+    Deployment instructions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#real-world-use-instructions" class="md-nav__link">
+    Real-world use instructions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#local-development-tips" class="md-nav__link">
+    Local development tips
+  </a>
+  
+    <nav class="md-nav" aria-label="Local development tips">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-import-and-export-local-data" class="md-nav__link">
+    How To: import and export local data
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-add-a-new-streamfield-component-based-on-a-protocol-component" class="md-nav__link">
+    How To: Add a new StreamField component based on a Protocol component
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="birdbox">Birdbox</h1>
+<p>Birdbox is a kit for building on-brand, easily editable microsites quickly.</p>
+<p>It was developed by the Marketing Engineering team to save us time and to put more control over content in the hands of the relevant project’s teams.</p>
+<p>Birdbox aims to be a full-stack solution. It brings together three key aspects:</p>
+<pre><code>* A class-leading content management system: Wagtail
+
+* Mozila’s design system for the web, [Protocol](https://protocol.mozilla.org), to help ensure the sites look and behave like Mozilla sites
+
+* Streamlined infrastructure setup.
+</code></pre>
+<p>This is a documentation-only repo. The codebase for the kit is at <a href="https://github.com/mozmeao/birdbox/">https://github.com/mozmeao/birdbox/</a></p>
+<h2 id="documentation-status">Documentation status</h2>
+<p>Very early days</p>
+<h3 id="documentation-roadmap">Documentation Roadmap</h3>
+<ul>
+<li>[ ] Move from simple Markdown to GH pages</li>
+<li>[ ] Document infra side, with examples</li>
+<li>[ ] Stand up demo site, running bleeding-edge Birdbox so that it's easy to see components in use</li>
+</ul>
+<hr />
+<h2 id="setup">Setup</h2>
+<h3 id="running-locally-for-development-of-birdbox-itself">Running locally, for development of Birdbox itself</h3>
+<h4 id="directly-on-your-machine">Directly on your machine</h4>
+<p><em>This mode uses sqlite for the DB and stores uploaded media on your machine</em></p>
+<ul>
+<li>Install the <code>just</code> taskrunner (Docs <a href="https://github.com/casey/just">here</a>; spoiler: <code>brew install just</code>)</li>
+<li>Check out the repo</li>
+<li><code>cd</code> path/to/birdbox</li>
+<li>
+<p>Create then activate a virtual environment (<code>pyenv</code> + <code>pyenv-virtualenv</code> is recommended, but not required - see <a href="https://bedrock.readthedocs.io/en/latest/install.html#local-installation">Bedrock docs</a> for installation details). Python 3.11+ is required, which you can install with `pyenv install 3.11.3``</p>
+<p><code>pyenv virtualenv 3.11.3 birdbox
+pyenv activate birdbox</code></p>
+</li>
+<li>
+<p><code>just preflight</code> to install Python and JS dependencies, run migrations (against a simple SQLite DB for local dev), create a cache table</p>
+</li>
+<li>To make an admin user <code>just createsuperuser</code></li>
+<li>To run the local webpack bundler + django runserver: <code>just run-local</code> or <code>npm start</code> (both do the same thing)</li>
+<li>Go to <a href="http://localhost:8000">http://localhost:8000</a> for the default Wagtail site, and <a href="http://localhost:8000/admin/">http://localhost:8000/admin/</a> for the CMS UI</li>
+<li>Ideally you will now load in set of sample pages - see Local development tips, below</li>
+</ul>
+<p>Main Wagtail admin/editor docs are at <a href="https://guide.wagtail.org/en-latest/">https://guide.wagtail.org/en-latest/</a></p>
+<h4 id="on-your-machine-via-docker">On your machine, via Docker</h4>
+<p>We expect most active development to happen directly on 'bare metal' but it's possible to build  and use Docker containers to run Birdbox locally, avoiding the virtualenv and local dependency steps.</p>
+<p>Dockerized Birdbox uses a separate Postgres container for its database, not sqlite, so does not (currently) support the exporting and importing of local state.</p>
+<ul>
+<li>Install the <code>just</code> taskrunner (Docs <a href="https://github.com/casey/just">here</a>; spoiler: <code>brew install just</code>)</li>
+<li>Have Docker desktop and Docker Compose installed</li>
+<li>Check out the repo</li>
+<li><code>cd</code> path/to/birdbox</li>
+<li>Build the needed containers: <code>docker-compose build assets app</code></li>
+<li>Run the app container: <code>docker-compose up app</code> then go to <a href="http://localhost:8080">http://localhost:8080</a> -- note that at the moment you'll start with the default, empty, Wagtail site</li>
+</ul>
+<p>To run commands in the docker containers, there are a couple of convenience helpers:</p>
+<ul>
+<li><code>just docker-preflight</code> - the same preflighting steps as for local, just run in Docker</li>
+<li><code>just docker-shell</code> - run a bash shell in an already-running Docker container</li>
+<li><code>just docker-manage-py SOME_COMMAND</code> - run Django's manage.py script in the already-running docker container, with SOME_COMMAND passed as extra args. e.g. <code>just docker-manage-py makemigrations</code></li>
+</ul>
+<p>To that end, if you're setting up a new Docker build locally, you'll want to do the following just
+to get Wagtail running, but with no content. This is the equivalent of <code>just preflight</code>:</p>
+<pre><code>just docker-preflight
+just docker-manage-py createsuperuser
+just docker-manage-py bootstrap_footer
+</code></pre>
+<h5 id="cloud-storage-with-local-docker-build">Cloud storage with local Docker build</h5>
+<p>When using Docker locally, it's possible to configure birdbox to use cloud storage, as we do on a deployed site.</p>
+<p>To do this, copy ./docker/envfiles/local.env.example as local.env and add the relevant env vars. The link in the example file to Django-storages documentation shows what to set and also links to how to get the GCS credentials. For local use of Docker with GCS, you'll need to put those credentiuals somewhere that the Docker container can reach them - that's what the local-credentials directory is for: copy the relevant JSON credentials into there and update the  <code>GOOGLE_APPLICATION_CREDENTIALS</code> var in `local.env`` file to match.</p>
+<p>Once that's done, it should Just Work.</p>
+<h2 id="sso-setup">SSO setup</h2>
+<p>Full instructions to come, but if you want to use SSO for a deployed Birdbox site, you'll need to ask the IAM team to
+provision a new project for the appropriate domain and provide credentails for the Django app, which should be passed
+as the env vars <code>OIDC_RP_CLIENT_ID</code> and <code>OIDC_RP_CLIENT_SECRET</code> and ensure <code>USE_SSO_AUTH</code> is set to True in settings.</p>
+<p>Birdbox in SSO mode will not support 'drive by' user creation even if they have an @mozilla.com identity. Only users who already exist in the Wagtail admin as a User will be allowed to log in. This is done by shelling in to a fresh setup and using <code>python birdbox/manage.py createsuperuser</code></p>
+<h2 id="deployment-instructions">Deployment instructions</h2>
+<p>TO COME</p>
+<h2 id="real-world-use-instructions">Real-world use instructions</h2>
+<p>(i.e. making a new site using Birdbox as a template project)</p>
+<p>TO COME</p>
+<hr />
+<h2 id="local-development-tips">Local development tips</h2>
+<h3 id="how-to-import-and-export-local-data">How To: import and export local data</h3>
+<p>For local development, we use sqlite as our database, in part because it makes it easier to give another developer a copy of your state, which they can load in to be able to work with the same content you have. This is particularly useful for code review.</p>
+<p>(Note that it's not just the database we need to share around: we also need media files that line up with the records in the relevant DB table.)</p>
+<ol>
+<li>
+<p>To export a zip file of your local DB and images:</p>
+<p><code>just export-local-data</code></p>
+<p>...and note where the zip file is generated. Send that file to a colleague as needed. Note that it is zipped but not password-protected.</p>
+</li>
+<li>
+<p>To load in a zip file of DB and image data</p>
+<p><code>just import-local-data /path/to/file.zip</code></p>
+<p>This will replace your DB file and load in all the images, overwriting existing files. Note that it does not drop image files that aren't in the zip of data.</p>
+</li>
+</ol>
+<hr />
+<h2 id="how-to-add-a-new-streamfield-component-based-on-a-protocol-component">How To: Add a new StreamField component based on a Protocol component</h2>
+<p>(This assumes you know your way around Wagtail - if not, please at least review the <a href="https://docs.wagtail.org/en/stable/getting_started/index.html">Wagtail quick start</a>)</p>
+<ol>
+<li>Define a new block in Python in <code>microsite/blocks.py</code> with the fields/content items that the Protocol component needs (eg title, description, image)</li>
+<li>Add a new HTML template fragment for the new block in <code>microsite/templates/blocks/</code><ul>
+<li>Base the markup on the HTML in the Protocol docs' examples</li>
+<li>Remember to circle back and reference the template in the Python block definition</li>
+</ul>
+</li>
+<li>If JS or CSS is needed for the component, configure webpack to build it - see <code>src/css/protocol/card.scss</code> as an example<ul>
+<li>Remember to circle back to the Python nlock definition to set the <code>frontend_media</code> property so that this CSS/JS gets included when needed</li>
+</ul>
+</li>
+<li>Find the page (in <code>microsite.models</code>) with a StreamField that you want the new component to be available in. Add it to the list of blocks that are available.</li>
+<li><code>make makemigrations</code> then <code>make migrate</code> to get the DB up to speed</li>
+<li>In the Wagtail CMS admin, amend an instance of the relevant page to use your new block - you should be able to see it in the live preview. Usually it takes a bit of tweaking to get the page to look as you intend.</li>
+<li>If you need to add custom CSS to override what's in Protocol, add to <code>src/css/birdbox-protocol-overrides.css</code></li>
+</ol>
+<hr />
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="assets/javascripts/bundle.81fa17fe.min.js"></script>
+      
+    
+  </body>
+</html>
