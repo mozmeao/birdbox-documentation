@@ -1,5 +1,11 @@
 dev_addr: 127.0.0.1:8765
 
+markdown_extensions:
+  - toc:
+      permalink: true
+      title: What's on this page?
+  - tables
+
 nav:
   - Home: index.md
   - About: about.md
@@ -21,11 +27,12 @@ theme:
     - navigation.footer
     - navigation.path
     - navigation.sections
+    - navigation.expand
     - navigation.tabs
     - navigation.top
     - search.highlight
     - search.suggest
-    - toc.ingegrate
+    - toc.integrate
 
   name: material
 
