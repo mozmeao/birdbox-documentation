@@ -1,14 +1,12 @@
 # Extending functionality
 
-TODO
+This section assumes you know your way around Wagtail - if not, please at least review [Wagtail's Getting Started guide](https://docs.wagtail.org/en/stable/getting_started/index.html)) so that you understand how Wagtail fits into a Django project.
 
 Ideally: DOWNSTREAM FLOW
 
 If you plan to bring something back upstream:
 
 ## How To: Add a new StreamField component based on a Protocol component
-
-(This assumes you know your way around Wagtail - if not, please at least review the [Wagtail quick start](https://docs.wagtail.org/en/stable/getting_started/index.html))
 
 1. Define a new block in Python in `microsite/blocks.py` with the fields/content items that the Protocol component needs (eg title, description, image)
 2. Add a new HTML template fragment for the new block in `microsite/templates/blocks/`

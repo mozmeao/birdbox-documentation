@@ -29,7 +29,7 @@ Birdbox has also been through Mozilla's Rapid Risk Assessment process, so the se
 
     1. You don't _need_ to do any development to the codebase to be able to deploy a working CMS-backed website. (You can still add new things, however. Check out [Extending Birdbox](extending.md).)
 
-    2. The [core repository](https://github.com/mozmeao/birdbox/) is never directly deployed[^1] - it must be forked before use. This is to avoid any subsequent changes to the core birdbox repo being accidentally deployed to the new site. We explore this more in [Maintenance](maintenance.md).
+    2. Every Birdbox site runs the same code as the [core repository](https://github.com/mozmeao/birdbox/) but that core repo is never directly deployed[^1] - it must be forked before use. We explore this model more in [Maintenance](maintenance.md).
 
     3. We have clear documentation about how to connect the new site's (forked) repo to Mozilla SRE's build and deployment pipeline. After that, they deployment process is simple: if you can `git push origin:main|stage|prod`, you can deploy changes.
 
