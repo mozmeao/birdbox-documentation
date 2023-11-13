@@ -1,15 +1,29 @@
 # About this project
 
-[Birdbox](https://github.com/mozmeao/birdbox) is a kit for building on-brand, easily editable microsites quickly.
+Birdbox is a project from the Marketing Engineering and Operations (MEAO) team at Mozilla.
 
-It was developed by the Marketing Engineering team to save us time and to put more control over content in the hands of the relevant project’s teams.
+While it's focused on our own needs, [our code is, of course, open](https://github.com/mozmeao/birdbox).
 
-Birdbox aims to be a full-stack solution. It brings together three key aspects:
+## Core team
 
-* Wagtail: a class-leading content management system: Wagtail
+* Steve Jalim, MEAO
+* Craig Cook, MEAO
+* Brett Kochendorfer, Mozilla SRE
 
-* [Protocol](https://protocol.mozilla.org), Mozila’s design system for the web, to help ensure the sites look and behave like Mozilla sites
+## Thanks to
 
-* Streamlined infrastructure setup.
+...the following for their support, feedback and/or code contributions:
 
-This is a documentation-only repo. The codebase for the kit is at <https://github.com/mozmeao/birdbox/>
+* Alex Gibson
+* Elise Blanchard
+* Emma Navajas
+* Frida Kiriakos
+* Paul McLanahan
+* Stephanie Hobson
+* Van Le
+
+## Contact
+
+If you have questions about Birdbox, please reach out via `#birdbox` on Mozilla Slack or [Mozilla's Matrix server](https://matrix.to/#/#birdbox:mozilla.org).
+
+You can also email <birdbox@stevejalim.mozmail.com> or [open an Issue in the repo](https://github.com/mozmeao/birdbox/issues).

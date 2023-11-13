@@ -1,25 +1,46 @@
+site_name: Project Birdbox documentation
+
+copyright: "© Copyright 2011-2023, Mozilla"
 dev_addr: 127.0.0.1:8765
 
+# Documentation links
+repo_url: https://github.com/mozmeao/birdbox-documentation/
+site_url: https://mozmeao.github.io/birdbox-documentation/
+
 markdown_extensions:
+  - admonition
+  - attr_list
+  - footnotes
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - tables
   - toc:
       permalink: true
+      toc_depth: 3
       title: What's on this page?
-  - tables
 
 nav:
   - Home: index.md
+  - Set up a new site: bootstrapping.md
+  - Local setup: local_development.md
+  - Extending: extending.md
+  - Maintenance: maintenance.md
+  - FAQs: faqs.md
   - About: about.md
 
 plugins:
   - search
 
-repo_url: https://github.com/mozmeao/birdbox-documentation/
-
-site_name: Project Birdbox documentation
-
-site_url: https://mozmeao.github.io/birdbox-documentation/
-
 theme:
+  name: material
+
   features:
     - content.code.annotation
     - content.code.copy
@@ -34,7 +55,9 @@ theme:
     - search.suggest
     - toc.integrate
 
-  name: material
+  icon:
+    admonition:
+      note: material/lightbulb
 
   language: en
 
@@ -55,4 +78,8 @@ theme:
       primary: black
       accent: teal
 
-copyright: "© Copyright 2011-2023, Mozilla"
+extra:
+  social:
+    - icon: fontawesome/solid/bug
+      link: https://github.com/mozmeao/birdbox-documentation/issues/
+      name: Report a problem with this documentation
