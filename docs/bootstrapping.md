@@ -71,6 +71,8 @@ As part of the infrastructure setup (above), new configuration files will have b
 !!! note
     A developer will need appropriate access to the `mozilla-it` organisation.
 
+    Commits made to webservices-infra [need to be signed](../faqs/#how-do-i-sign-commits) in order to be merged.
+
 In that repo you will find a folder for your project - e.g. `birdbox-newsite` or just `newsite`.
 
 In that folder, there will be several configuration files. Most of them you do not need to edit, but the ones related to environment variables may need adding to as part of configuration. Here are the files and example contents for a Birdbox-based project
@@ -154,8 +156,7 @@ SSO is managed by the IAM team, and you can request setup via JIRA
 Once that request is done, there are three steps left:
 
 1. Get the OIDC credentials into the relevant environments - explained [here](../faqs/#how-do-i-edit-secrets)
-2. Create matching users in the Wagtail Admin. See the [specific notes for this](./adding_users_to_wagtail.md)
-3. Add users to the appropriate auth group(s) so they can actually log in – you can do this at `people.mozilla.org/a/GROUP_NAME_HERE`. There'll be a link to each group on your own people.m.o profile if you requested to be an initial curator for the new group(s).
+2. Bootstrap an admin user for yourself - this is covered below
 
 !!! note "Don't forget"
 
@@ -173,7 +174,7 @@ Now comes the stage where you can start adding pages and content into the site, 
 
     You can either duplicate the same manual effort across all three, or add content to one of them and then copy it to the other two. That copying process is currently pretty hands-on, but there are [some tips here](../faqs/#how-to-i-copy-data-between-devstageprod-sites).
 
-### Add users
+### Add an initial admin user
 
 The system starts with no users, and you can't log in to create users unless a matching account already exists. So, first you have to create one via the CLI.
 
@@ -181,29 +182,13 @@ On each deployed environment - dev, stage and prod, do this:
 
 1) Shell into a running pod - [see here if you need help](../faqs/#how-do-i-shell-into-a-running-pod)
 
-2) run `python birdbox/manage.py createsuperuser --email=YOURIDENTITY@mozilla.com --username=YOURIDENTITY@mozilla.com --no-input`. It is crucial that `YOURIDENTITY@mozilla.com` matches your Mozilla SSO email address.
+2) Run `python birdbox/manage.py createsuperuser --email=YOURIDENTITY@mozilla.com --username=YOURIDENTITY@mozilla.com --no-input`. It is crucial that `YOURIDENTITY@mozilla.com` matches your Mozilla SSO email address.
 
 !!! note "No password? No problem"
 
     The line above will create a new admin user but with no password. Normally in Django that would block authentication until a password it set, but because Mozilla SSO does not need a password (and is the only way to authenticate), this is fine.
 
-3) Now open a browser and go to `/admin/` on the relevant deployed site URL. You'll see a `Sign in with Mozilla SSO` button - click it to sign in.
-
-4) In Wagtail's settings, find the User section:
-
-![User settings in Wagtail's menu](./images/settings_users.png){:width="400px"}.
-
-5) Use this to add new Users, again ensuring the username and email match their SSO-linked email address.
-
-6) After entering the core user information, remember to give each user an appropriate role.
-
-!!! note "User roles"
-
-    Birdbox ships with Wagtail's default Admin, Moderator and Editor roles, but these can be extended/complemented.
-
-    You should have as few full Admin users as possible - ideally just the core developer on the project.
-
-    Only very trusted people should have either an Admin role or have both the Moderator _and_ Editor roles at the same time – these two situations allow an individual to publish content without oversight. Ideally Person A is a Moderator and Person B is an Editor, so they need each other to get content live. See the [Wagtail Editor Guide's notes on roles](https://guide.wagtail.org/en-latest/how-to-guides/manage-users-and-roles/)
+3) You will now be able to sign in at `/admin/` using your Mozilla SSO identity
 
 ### Set new root page
 
@@ -251,6 +236,12 @@ If you want a button in the right-side of the nav, this is where you set that up
     **After making any changes to Site Settings, remember to Save the settings.**
 
     The changes are immediately reflected in the site - there is no concept of Preview with Site Settings.
+
+### Add other users
+
+Now the site is almost ready to lay in content, it might be a good time to allow others to add that content. See the [specific notes for adding users](./adding_users_to_wagtail.md).
+
+Alternatively, you may wish to lay in all the initial content youself before "handing over the keys" - this is also fine.
 
 ## Wagtail: Lay in content
 
