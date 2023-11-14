@@ -34,19 +34,28 @@ Birdbox does need at least SSO/OIDC secrets to be set up by a developer. This is
 
 For very specific instructions on how to use it, please see the internal MEAO runbook. TODO: add this.
 
+TODO
+TODO
+TODO
+
 ### How to I copy data between dev/stage/prod sites?
 
-## Wagtail/CMS
-
-### Wagtail editor guide
-
-TODO
-    <https://guide.wagtail.org/en-latest/>
-
-### Configure the Nav for a site?
-
 TODO
 
-### auto-add a footer
+## CMS / Site
+
+### How do I do X in Wagtail?
+
+<https://guide.wagtail.org/en-latest/>
+
+### How do I add CSS or JS to the project?
+
+TODO
+
+### How do I configure the nav for a site?
+
+TODO
+
+### How do I edit the footer fora site?
 
 TODO

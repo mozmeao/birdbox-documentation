@@ -71,7 +71,7 @@ As part of the infrastructure setup (above), new configuration files will have b
 !!! note
     A developer will need appropriate access to the `mozilla-it` organisation.
 
-In that repo you will find a folder for your project eg `birdbox-newsite` or just `newsite`.
+In that repo you will find a folder for your project - e.g. `birdbox-newsite` or just `newsite`.
 
 In that folder, there will be several configuration files. Most of them you do not need to edit, but the ones related to environment variables may need adding to as part of configuration. Here are the files and example contents for a Birdbox-based project
 
