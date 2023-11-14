@@ -1,0 +1,21 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at https://mozilla.org/MPL/2.0/.
+
+# Global excludes, override per repo below if different excludes required.
+# exclude: >
+#   (?x)^(
+#     DIRNAME_OR_FILENAME_HERE
+#     | DIRNAME_OR_FILENAME_HERE
+#     | DIRNAME_OR_FILENAME_HERE
+#   )
+repos:
+  # Note: hooks that add content must run before ones which check formatting, lint, etc
+  - repo: https://github.com/Yelp/detect-secrets
+    rev: v1.4.0
+    hooks:
+    -   id: detect-secrets
+        name: Detect secrets
+        language: python
+        entry: detect-secrets-hook
+        args: ['--baseline', '.secrets.baseline']
