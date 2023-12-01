@@ -17,6 +17,7 @@ This mode uses sqlite for the DB and stores uploaded media on your machine.
     ```
 
 * `just preflight` to install Python and JS dependencies, run migrations (against a simple SQLite DB for local dev) and create a cache table
+* Duplicate the `.env-example` file as `.env`. You will need to comment out the two lines related to Sentry and CSP reporting endpoints if you are not using [kent](https://github.com/willkg/kent) locally.
 * To make an admin user `just createsuperuser`. If there are no SSO credentials in your local environment or `.env` file, Birdbox falls back to standard username-plus-password auth.
 * To run the local webpack bundler + django runserver: `just run-local` or `npm start` (both do the same thing)
 * Go to <http://localhost:8000> for the default Wagtail site, and <http://localhost:8000/admin/> for the CMS UI
