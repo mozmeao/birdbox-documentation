@@ -37,7 +37,7 @@ The infrastructure we need comprises:
 
 Don't worry, though - as much of this as possible is repeatable, or straightfoward to do.
 
-* The k8s service and deployment pipeline steps (items 1 and 2 above) are well documented by SRE and live in [this internal documentation](https://mozilla-hub.atlassian.net/wiki/spaces/SRE/pages/27919126/Bootstrapping+a+project). At the moment, the majority of this work still needs to be done by a member of the SRE Green team, but as much as possible is already within reach of the MEAO backend team.
+* The k8s service and deployment pipeline steps (items 1 and 2 above) are well documented by SRE and live in [this internal documentation](https://mozilla-hub.atlassian.net/wiki/spaces/EN/pages/495223137/Birdbox+infra+setup+notes). At the moment, the majority of this work still needs to be done by a member of the SRE Green team, but as much as possible is already within reach of the MEAO backend team.
 
 * Domain setup (Item 3) has to be handled by SRE.
 
