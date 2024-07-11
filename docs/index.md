@@ -1,5 +1,7 @@
 # Birdbox
 
+![Birdbox logo](./images/logo.png){:width="400px"}.
+
 Birdbox is a kit for building on-brand, easily editable microsites quickly.
 
 It was developed by the Marketing Engineering team to save us time and to put more control over content in the hands of the relevant project’s teams.

@@ -1,5 +1,7 @@
 # Documentation for Project Birdbox
 
+![](docs/images/logo.png)
+
 Birdbox is a kit for building on-brand, easily editable microsites quickly.
 
 **This is a documentation-only repo. The codebase for the kit is at <https://github.com/mozmeao/birdbox/>**
