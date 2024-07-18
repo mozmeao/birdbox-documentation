@@ -21,7 +21,7 @@ This mode uses sqlite for the DB and stores uploaded media on your machine.
 * To make an admin user `just createsuperuser`. If there are no SSO credentials in your local environment or `.env` file, Birdbox falls back to standard username-plus-password auth.
 * To run the local webpack bundler + django runserver: `just run-local` or `npm start` (both do the same thing)
 * Go to <http://localhost:8000> for the default Wagtail site, and <http://localhost:8000/admin/> for the CMS UI
-* Ideally you would now load in an export from another developer (see tips below), or you can bootstrao your own local site using [the same steps for a live site](../bootstrapping/#wagtail-bootstrap-an-initial-site).
+* Ideally you would now load in an export from another developer (see tips below), or you can bootstrao your own local site using [the same steps for a live site](bootstrapping.md#wagtail-bootstrap-an-initial-site).
 
 ## Running via Docker on your machine
 
