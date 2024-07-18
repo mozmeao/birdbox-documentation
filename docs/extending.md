@@ -53,7 +53,7 @@ Future improvements to explore:
 2. Add a new HTML template fragment for the new block in `microsite/templates/blocks/`
     * Base the markup on the HTML in the Protocol docs' examples
     * Remember to circle back and reference the template filename in the Python block definition - see other blocks for examples
-3. If JS or CSS is needed for the component, configure webpack to build it - see `src/css/protocol/card.scss` as an example or [this FAQ](../faqs/#how-do-i-add-css-or-js-to-the-project).
+3. If JS or CSS is needed for the component, configure webpack to build it - see `src/css/protocol/card.scss` as an example or [this FAQ](faqs.md#how-do-i-add-css-or-js-to-the-project).
     * Remember to circle back to the Python nlock definition to set the `frontend_media` property so that this CSS/JS gets included on page load
 4. Find the page (in `microsite.models`) with a `StreamField` that you want the new component to be available in. Add it to the list of blocks that are available.
 5. `just makemigrations` then `just migrate` to udpate the database.

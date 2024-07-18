@@ -71,7 +71,7 @@ As part of the infrastructure setup (above), new configuration files will have b
 !!! note
     A developer will need appropriate access to the `mozilla-it` organisation.
 
-    Commits made to webservices-infra [need to be signed](../faqs/#how-do-i-sign-commits) in order to be merged.
+    Commits made to webservices-infra [need to be signed](faqs.md#how-do-i-sign-commits) in order to be merged.
 
 In that repo you will find a folder for your project - e.g. `birdbox-newsite` or just `newsite`.
 
@@ -155,7 +155,7 @@ SSO is managed by the IAM team, and you can request setup via JIRA
 
 Once that request is done, there are three steps left:
 
-1. Get the OIDC credentials into the relevant environments - explained [here](../faqs/#how-do-i-edit-secrets)
+1. Get the OIDC credentials into the relevant environments - explained [here](faqs.md#how-do-i-edit-secrets)
 2. Bootstrap an admin user for yourself - this is covered below
 
 !!! note "Don't forget"
@@ -172,7 +172,7 @@ Now comes the stage where you can start adding pages and content into the site, 
 
     If you have Dev, Stage and Prod sites and you want them all to have similar content, you'll need to set them all up the same way.
 
-    You can either duplicate the same manual effort across all three, or add content to one of them and then copy it to the other two. That copying process is currently pretty hands-on, but there are [some tips here](../faqs/#how-to-i-copy-data-between-devstageprod-sites).
+    You can either duplicate the same manual effort across all three, or add content to one of them and then copy it to the other two. That copying process is currently pretty hands-on, but there are [some tips here](faqs.md#how-to-i-copy-data-between-devstageprod-sites).
 
 ### Add an initial admin user
 
@@ -180,7 +180,7 @@ The system starts with no users, and you can't log in to create users unless a m
 
 On each deployed environment - dev, stage and prod, do this:
 
-1) Shell into a running pod - [see here if you need help](../faqs/#how-do-i-shell-into-a-running-pod)
+1) Shell into a running pod - [see here if you need help](faqs.md#how-do-i-shell-into-a-running-pod)
 
 2) Run `python birdbox/manage.py createsuperuser --email=YOURIDENTITY@mozilla.com --username=YOURIDENTITY@mozilla.com --no-input`. It is crucial that `YOURIDENTITY@mozilla.com` matches your Mozilla SSO email address.
 
@@ -209,7 +209,7 @@ Wagtail comes pre-set-up with a default "Welcome to your Wagtail site!" page at 
 
 The footer can be manually edited via `Settings > Configure footer`, where links are grouped into columns and the small links are handled as rich text.
 
-If you want to quickly add a Mozilla.org-like footer to a site, you can [shell into a pod](../faqs/#how-do-i-shell-into-a-running-pod) for the relevant environment and run: `python birdbox/manage.py bootstrap_footer --commit`
+If you want to quickly add a Mozilla.org-like footer to a site, you can [shell into a pod](faqs.md#how-do-i-shell-into-a-running-pod) for the relevant environment and run: `python birdbox/manage.py bootstrap_footer --commit`
 
 #### Nav
 

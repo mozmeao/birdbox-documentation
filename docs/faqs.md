@@ -97,10 +97,10 @@ To add a new CSS or JS file:
 
 ### How do I configure the nav for a site?
 
-See [here](../bootstrapping/#enable-footer-and-nav).
+See [here](bootstrapping.md#enable-footer-and-nav).
 
 ### How do I edit the footer for site?
 
-See [here](../bootstrapping/#enable-footer-and-nav).
+See [here](bootstrapping.md#enable-footer-and-nav).
 
 [^1]: This trigger branch refers to the `main` branch of the pipeline code in `deploy-newsite`, not the `birdbox-newsite` application codebase.
