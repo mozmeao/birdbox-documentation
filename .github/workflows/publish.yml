@@ -23,15 +23,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: 3.11
+          cache: pip
       - id: pages
-        uses: actions/configure-pages@v4
-      - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
-      - uses: actions/cache@v4
-        with:
-          key: mkdocs-material-${{ env.cache_id }}
-          path: .cache
-          restore-keys: |
-            mkdocs-material-
+        uses: actions/configure-pages@v5
       - run: pip install -r requirements.txt
       - run: mkdocs build -d site
       - uses: actions/upload-pages-artifact@v3
