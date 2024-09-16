@@ -44,7 +44,7 @@ Birdbox has also been through Mozilla's Rapid Risk Assessment process, so the se
 * [x] Move from simple Markdown to GH pages
 * [x] end-to-end setup process of a new site
 * [x] Document infra side, with code samples
-* [ ] Turn all of the above into a tickable checklist, to speed up the process
-* [ ] Stand up demo site, running bleeding-edge Birdbox, so that it's easy to see components in use
+* [x] Stand up demo site, running bleeding-edge Birdbox, so that it's easy to see components in use
+* [ ] Turn all of the above into a reusable, tickable checklist, to speed up the process
 
 [^1]: The exception here is the (forthcoming) demo site about birdbox, which WILL run off the bleeding-edge core repo
