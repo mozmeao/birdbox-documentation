@@ -1,7 +1,8 @@
 compile-requirements:
-    pip install -U pip
-    pip install pip-tools
-    pip-compile --generate-hashes -r requirements.in --resolver=backtracking --rebuild
+    pip install -U uv
+    # start with a clean slate each time
+    rm requirements.txt
+    uv pip compile --generate-hashes --no-strip-extras requirements.in -o requirements.txt
 
 preflight:
     pip install -r requirements.txt
