@@ -22,6 +22,7 @@ This mode uses sqlite for the DB and stores uploaded media on your machine.
 * To run the local webpack bundler + django runserver: `just run-local` or `npm start` (both do the same thing)
 * Go to <http://localhost:8000> for the default Wagtail site, and <http://localhost:8000/admin/> for the CMS UI
 * Ideally you would now load in an export from another developer (see tips below), or you can bootstrao your own local site using [the same steps for a live site](bootstrapping.md#wagtail-bootstrap-an-initial-site).
+* Optionally, if you want to support animated GIFs in local builds, this uses the Python ``Wand`` library, which is included as a Python dependency in Birdbox, but to make it work you will need to install ``ImageMagick`` as a system-level dependency as well. Wand's documentation [explains how to do this for various platforms](https://docs.wand-py.org/en/latest/guide/install.html).
 
 ## Running via Docker on your machine
 
